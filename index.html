@@ -13,11 +13,40 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="SIS" />
         <link rel="manifest" href="/site.webmanifest" />
-      <script type="module" crossorigin src="/assets/index-DDE3dGkb.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-Dq9A6BGf.css">
+      <script type="module" crossorigin src="/assets/index-Ck0q5b_N.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-DqzgRY9V.css">
     </head>
     <body>
         <div id="interactive" class="viewport"></div>
+        <div id="scanResults">
+            <form autocomplete="off">
+                <div>
+                    <p id="scanResults-name"></p>
+                    <p id="scanResults-pid"></p>
+                </div>
+                <div>
+                    <input id="scanResults-countOp-add" type="radio" name="countOp" value="add" checked disabled/>
+                    <label for="add">Add</label><br/>
+                    <input id="scanResults-countOp-remove" type="radio" name="countOp" value="remove" disabled/>
+                    <label for="remove">Remove</label>
+                </div>
+                <input id="scanResults-count" type="number" name="deltaCount" disabled/>
+                <button id="scanResults-submit" type="submit" disabled>Submit</button>
+            </form>
+            <hr>
+            <table id="itemStats">
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td id="itemStats-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Count</td>
+                        <td id="itemStats-count"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
     </body>
 </html>
